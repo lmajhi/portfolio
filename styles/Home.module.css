@@ -17,7 +17,9 @@
 .headImage {
   width: 300px;
   height: 300px;
+  border-radius: 50%;
   margin-left: 20px;
+  overflow:hidden;
 }
 .profileLinkContainer {
   margin-top: 10px;
@@ -45,4 +47,11 @@
   margin-bottom: 10px;
   margin-left: 200px;
   margin-right: 200px;
+}
+.infoName {
+  font-weight: bolder;
+  font-size: 40px;
+}
+.infoDesignation {
+  font-size: 20px;
 }
