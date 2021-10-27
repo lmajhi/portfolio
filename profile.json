@@ -1,11 +1,11 @@
 {
     "personalInfo" : {
         "name": "Laxminarayan Majhi",
-        "designation": "Senior Software Engineer",
+        "designation": "Software Engineer",
         "city": "Hyderabad",
         "Country": "India",
         "bioShort": "",
-        "bioLong": "" 
+        "bioLong": "Hi There! My name is Laxminarayan and I'm a Senior Software Engineer at HSBC, India. I work with React, React Native and NodeJS as my primary tools. " 
         },
     "links": [
         {
@@ -28,9 +28,9 @@
           "link": "https://github.com/lmajhi"
         },
         {
-          "id": 4,
-          "name": "github",
-          "link": "https://github.com/lmajhi"
+          "id": 5,
+          "name": "medium",
+          "link": "https://medium.com/@lakshyaing"
         }
       ]
     
