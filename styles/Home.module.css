@@ -1,0 +1,48 @@
+.container {
+  display: flex;
+  align-content:center;
+  justify-content: center;
+  flex-direction: column;
+}
+.banner {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 50px;
+}
+.headline {
+  margin: 10px; 
+}
+.headImage {
+  width: 300px;
+  height: 300px;
+  margin-left: 20px;
+}
+.profileLinkContainer {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  align-content: center;
+  justify-content: space-evenly;
+  display: flex;
+  flex-direction: row;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+.linkItem {
+  display: flex;
+  padding-left: 20px;
+  text-align: center;
+  align-self: center;
+  justify-self:center;
+  height: 30px;
+}
+
+.bioContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 200px;
+  margin-right: 200px;
+}

@@ -1,0 +1,37 @@
+{
+    "personalInfo" : {
+        "name": "Laxminarayan Majhi",
+        "designation": "Senior Software",
+        "city": "Hyderabad",
+        "Country": "India",
+        "bioShort": "",
+        "bioLong": "" 
+        },
+    "links": [
+        {
+          "id": 1,
+          "name": "twitter",
+          "link": "https://twitter.com/Lakshyaing"
+        },
+        {
+          "id": 2,
+          "name": "facebook",
+          "link": "https://www.facebook.com/lakshyaing/"
+        },{
+          "id": 3,
+          "name": "linkedin",
+          "link": "https://www.linkedin.com/in/laxminarayan-majhi-355397b3/"
+        },
+        {
+          "id": 4,
+          "name": "github",
+          "link": "https://github.com/lmajhi"
+        },
+        {
+          "id": 4,
+          "name": "github",
+          "link": "https://github.com/lmajhi"
+        }
+      ]
+    
+}
