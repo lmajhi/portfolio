@@ -1,5 +1,6 @@
 import styles from '../styles/Home.module.css'
 import Image from "next/image";
+import Head from "next/head";
 import profileData from "../profile.json";
 import profilePic from "../public/profilepic.png"
 
@@ -19,9 +20,9 @@ const HeadImage = () => {
 }
 
 const ProfileLinks = () => {
-  const listItem = profileData.links.map(item => {
+  const listItem = profileData.links.map((item) => {
     return (
-      <div className={styles.linkItem}>
+      <div key={item.id} className={styles.linkItem}>
         <a href={item.link} target="_blank" rel="noopener noreferrer">
           <u>{item.name}</u></a>
       </div>
@@ -46,6 +47,10 @@ const Bio = () => {
 export default function Home() {
   return (
     <div className={styles.container}>
+      <Head>
+       <title> {profileData.personalInfo.name}
+         </title> 
+      </Head>
       <div className={styles.banner}>
         <HeadLine/>
         <HeadImage/>
