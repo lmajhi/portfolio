@@ -1,50 +1,26 @@
 import styles from '../styles/Home.module.css'
 import Image from "next/image";
-import { useEffect, useState } from 'react';
-const profileLinks = [
-  {
-    id: 1,
-    name: "twitter",
-    link: "https://twitter.com/Lakshyaing"
-  },
-  {
-    id: 2,
-    name: "facebook",
-    link: "https://www.facebook.com/lakshyaing/"
-  },{
-    id: 3,
-    name: "linkedin",
-    link: "https://www.linkedin.com/in/laxminarayan-majhi-355397b3/"
-  },
-  {
-    id: 4,
-    name: "github",
-    link: "https://github.com/lmajhi"
-  },
-  {
-    id: 4,
-    name: "github",
-    link: "https://github.com/lmajhi"
-  }
-]
+import profileData from "../profile.json";
+import profilePic from "../public/profilepic.png"
+
 const HeadLine = () => {
   return  (<div className={styles.headline}>
-      <p >Laxminarayan Majhi</p>
+      <p >{profileData.personalInfo.name}</p>
       <br></br>
-    <p>Senior Software Engineer</p>
+    <p>{profileData.personalInfo.designation}</p>
   </div>)
 }
 
 const HeadImage = () => {
   return ( <div className={styles.headImage}>
-    <Image src={"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fnintendoeverything.com%2Fwp-content%2Fuploads%2Fpikachu-1.jpg&f=1&nofb=1"}
+    <Image src={profilePic}
     height={300}
     width={300}/>
   </div>)
 }
 
 const ProfileLinks = () => {
-  const listItem = profileLinks.map(item => {
+  const listItem = profileData.links.map(item => {
     return (
       <div className={styles.linkItem}>
         <a href={item.link} target="_blank" rel="noopener noreferrer">{item.name}</a>
