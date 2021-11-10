@@ -3,6 +3,8 @@ import Image from "next/image";
 import Head from "next/head";
 import profileData from "../profile.json";
 import profilePic from "../public/profilepic.png"
+import Switch from "../components/Switch/Switch";
+import { useEffect, useState } from 'react';
 
 const HeadLine = () => {
   return  (<div className={styles.headline}>
@@ -12,10 +14,11 @@ const HeadLine = () => {
 }
 
 const HeadImage = () => {
-  return ( <div className={styles.headImage}>
-    <Image src={profilePic}
-    height={600}
-    width={560}/>
+  return ( <div className={styles.headImageContainer}>
+    <Image className={styles.headImage}
+    src={profilePic}
+    height={200}
+    width={200}/>
   </div>)
 }
 
@@ -39,18 +42,25 @@ const ProfileLinks = () => {
 const Bio = () => {
   return (
     <div className={styles.bioContainer}>
-    <p>{profileData.personalInfo.bioLong}</p>     
+    <p>{profileData.personalInfo.bioLong}</p>
     </div>
   )
 }
 
 export default function Home() {
+  const [bgColor, setBgColor] = useState("white");
+
+  useEffect(() => {
+    document.body.style.backgroundColor = bgColor
+  }, []);
+
   return (
     <div className={styles.container}>
       <Head>
        <title> {profileData.personalInfo.name}
-         </title> 
+         </title>
       </Head>
+      <Switch label={"Dark"}/>
       <div className={styles.banner}>
         <HeadLine/>
         <HeadImage/>

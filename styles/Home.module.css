@@ -12,24 +12,24 @@
   margin-top: 50px;
 }
 .headline {
-  margin: 10px; 
+  margin: 10px;
 }
-.headImage {
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
+
+.headImageContainer {
   margin-left: 20px;
+}
+
+.headImage {
+  border-radius: 50%;
   overflow:hidden;
 }
 .profileLinkContainer {
+  display: flex;
   margin-top: 10px;
   margin-bottom: 10px;
   align-content: center;
   justify-content: space-evenly;
-  display: flex;
   flex-direction: row;
-  margin-left: 200px;
-  margin-right: 200px;
 }
 .linkItem {
   display: flex;
@@ -45,8 +45,8 @@
   flex-direction: column;
   margin-top: 10px;
   margin-bottom: 10px;
-  margin-left: 200px;
-  margin-right: 200px;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 .infoName {
   font-weight: bolder;
